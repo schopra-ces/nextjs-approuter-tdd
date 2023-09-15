@@ -1,5 +1,5 @@
-import { faker } from '@faker-js/faker';
-import { Blogs } from '../models/blog';
+import { faker } from "@faker-js/faker";
+import { Blogs } from "../models/blog";
 
 function createRandomBlogContent(): Blogs {
   return {
@@ -8,11 +8,11 @@ function createRandomBlogContent(): Blogs {
     description: faker.string.sample(100),
     date: faker.string.alphanumeric(),
     author: {
-        name: faker.internet.userName(),
-        image: faker.image.avatar(),
+      name: faker.internet.userName(),
+      image: faker.image.avatar(),
     },
     image: faker.image.avatar(),
-    slug: faker.string.alphanumeric()
+    slug: faker.string.alphanumeric(),
   };
 }
 

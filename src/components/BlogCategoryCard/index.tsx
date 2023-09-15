@@ -1,11 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-// import { FC } from "react";
+import { FC } from "react";
 import { blogCategoryCardClassNames } from "./blogCategoryClassNames";
 import { Category } from "../../../models/category";
 
-// const BlogCategoryCard: FC<Category> = (props) => {
-export default async function BlogCategoryCard(props: Category) {
+const BlogCategoryCard: FC<Category> = (props) => {
   const { image, name, slug, description } = props;
 
   return (
@@ -19,13 +18,21 @@ export default async function BlogCategoryCard(props: Category) {
           src={image}
           alt={name}
         />
-        <h3 data-testid="category-name" className={blogCategoryCardClassNames.categoryName}>{name}</h3>
-        <p data-testid="category-desc" className={blogCategoryCardClassNames.categoryDescription}>
+        <h3
+          data-testid="category-name"
+          className={blogCategoryCardClassNames.categoryName}
+        >
+          {name}
+        </h3>
+        <p
+          data-testid="category-desc"
+          className={blogCategoryCardClassNames.categoryDescription}
+        >
           {description.slice(0, 100)}...
         </p>
       </div>
     </Link>
   );
-}
+};
 
-// export default BlogCategoryCard;
+export default BlogCategoryCard;

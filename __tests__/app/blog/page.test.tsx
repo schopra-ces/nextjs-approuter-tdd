@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { CATEGORY } from "../../../mockdata/blog-categories";
 import { BLOG_TEXT, BLOG_TITLE } from "../../../constants";
 import Page from "@/app/blog/page";

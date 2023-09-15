@@ -4,8 +4,9 @@ import BlogCategoryCard from "@/components/BlogCategoryCard";
 import { fetchBlogsList } from "@/api/blog/blogService";
 
 export default async function Page() {
-  
-  let categories = await fetchBlogsList(process.env.BLOG_LIST_URL)
+  let categories: Category[] = await fetchBlogsList(
+    process.env.BLOG_LIST_URL as string
+  );
   if (!categories) return null;
 
   return (

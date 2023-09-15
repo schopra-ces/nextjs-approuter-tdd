@@ -2,9 +2,7 @@ import { render, screen } from "@testing-library/react";
 import Page from "@/app/blog/[slug]/page";
 import { BLOG_CONTENT } from "../../../mockdata/blog-content";
 
-
 describe("Slug/Blog Content", () => {
-  
   it("Should have a Back to Home Page Link", async () => {
     global.fetch = jest.fn().mockResolvedValue({
       json: jest.fn().mockResolvedValue(BLOG_CONTENT),
@@ -94,5 +92,4 @@ describe("Slug/Blog Content", () => {
     const blogSubtitle = screen.getByTestId("blog-description");
     expect(blogSubtitle).toBeInTheDocument();
   });
-
 });

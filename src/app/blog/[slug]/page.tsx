@@ -3,10 +3,12 @@ import Link from "next/link";
 import { classNames } from "./blogClassNames";
 import { BACK_TO_HOME } from "../../../../constants";
 import { fetchBlogsContent } from "@/api/blog/blogContentService";
+import { Blogs } from "../../../../models/blog";
 
 export default async function Page() {
- 
-  let blogPost = await fetchBlogsContent(process.env.BLOG_CONTENT_URL)
+  let blogPost: Blogs = await fetchBlogsContent(
+    process.env.BLOG_CONTENT_URL as string
+  );
   if (!blogPost) return null;
 
   return (

@@ -21,7 +21,7 @@ describe("Header", () => {
     expect(welcomeNav).toHaveAttribute("href", "/");
   });
 
-    it("Should render welcome text", () => {
+  it("Should render welcome text", () => {
     render(<Header />);
     const welcomeText = screen.getByText(WELCOME_USER);
     expect(welcomeText).toBeInTheDocument();
@@ -50,5 +50,4 @@ describe("Header", () => {
     const blogNavText = screen.getByText(BLOG_NAV);
     expect(blogNavText).toBeInTheDocument();
   });
-
 });
