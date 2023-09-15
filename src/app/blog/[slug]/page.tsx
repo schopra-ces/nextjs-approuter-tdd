@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { classNames } from "./blogClassNames";
 import { BACK_TO_HOME } from "../../../../constants";
+import { fetchBlogsContent } from "@/api/blog/blogContentService";
 
 export default async function Page() {
-  const contentRes = await fetch("http://demo0206776.mockable.io/getContent");
-  let blogPost = await contentRes.json();
+ 
+  let blogPost = await fetchBlogsContent(process.env.BLOG_CONTENT_URL)
   if (!blogPost) return null;
 
   return (

@@ -1,12 +1,11 @@
 import { Category } from "../../../models/category";
 import { BLOG_TEXT, BLOG_TITLE } from "../../../constants";
 import BlogCategoryCard from "@/components/BlogCategoryCard";
+import { fetchBlogsList } from "@/api/blog/blogService";
 
 export default async function Page() {
-  const categoriesRes = await fetch(
-    "http://demo0206776.mockable.io/getBlogCategory"
-  );
-  let categories = await categoriesRes.json();
+  
+  let categories = await fetchBlogsList(process.env.BLOG_LIST_URL)
   if (!categories) return null;
 
   return (
