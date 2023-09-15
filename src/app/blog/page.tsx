@@ -11,7 +11,7 @@ export default async function Page() {
 
   return (
     <>
-      <section className="pb-8 pt-40 text-primary-dark px-4 lg:px-36">
+      <section className="pb-8 pt-20 text-primary-dark px-4 lg:px-36">
         <h2 className="text-4xl font-bold mb-6">{BLOG_TITLE}</h2>
         <p className="text-black-200 text-lg mb-12">{BLOG_TEXT}</p>
 
@@ -34,3 +34,4 @@ export default async function Page() {
     </>
   );
 }
+
