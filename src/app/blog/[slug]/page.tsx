@@ -2,14 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { classNames } from "./blogClassNames";
 import { BACK_TO_HOME, LOADER_TEXT } from "../../../constants";
-import { fetchBlogsContent } from "@/api/blog/blogContentService";
-import { Blogs } from "../../../models/blog";
 import { Suspense } from "react";
 
 export default async function Page() {
-  let blogPost: Blogs = await fetchBlogsContent(
-    process.env.BLOG_CONTENT_URL as string
-  );
+  let response = await fetch(`${process.env.BFF_URL}/api/content`)
+  const blogPost = await response.json();
   if (!blogPost) return null;
 
   return (

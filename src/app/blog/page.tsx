@@ -1,12 +1,10 @@
-import { Category } from "../../../models/category";
+import { Category } from "@/models/category";
 import { BLOG_TEXT, BLOG_TITLE } from "../../constants";
 import BlogCategoryCard from "@/components/BlogCategoryCard";
-import { fetchBlogsList } from "@/api/blog/blogService";
 
 export default async function Page() {
-  let categories: Category[] = await fetchBlogsList(
-    process.env.BLOG_LIST_URL as string
-  );
+  let response = await fetch(`${process.env.BFF_URL}/api/blogs`)
+  const categories = await response.json();
   if (!categories) return null;
 
   return (

@@ -7,7 +7,6 @@ import { Category } from "@/models/category";
 export async function GET(request: NextRequest) {
   try {
     let blogs = await fetchBlogs<Category[]>(routesList.Blog.getCategory);
-    console.log(NextResponse.json({message: blogs}))
     return NextResponse.json(blogs);
   } catch (error) {
     NextResponse.json({
