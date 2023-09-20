@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HOME_BTN_TEXT, NAV_BLOG_TEXT, WELCOME_TEXT } from "../../constants";
+import { HOME_BTN_TEXT, NAV_BLOG_TEXT, WELCOME_TEXT } from "../constants";
 
 export default async function Home() {
   return (

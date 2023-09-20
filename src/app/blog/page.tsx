@@ -1,5 +1,5 @@
 import { Category } from "../../../models/category";
-import { BLOG_TEXT, BLOG_TITLE } from "../../../constants";
+import { BLOG_TEXT, BLOG_TITLE } from "../../constants";
 import BlogCategoryCard from "@/components/BlogCategoryCard";
 import { fetchBlogsList } from "@/api/blog/blogService";
 

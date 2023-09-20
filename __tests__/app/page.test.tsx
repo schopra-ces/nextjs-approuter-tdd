@@ -1,6 +1,6 @@
 import Home from "@/app/page";
 import { render, screen, waitFor } from "@testing-library/react";
-import { NAV_BLOG_TEXT, WELCOME_TEXT } from "../../constants";
+import { NAV_BLOG_TEXT, WELCOME_TEXT } from "../../src/constants";
 
 describe("Home Page", () => {
   it("Should render the section", async () => {

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { classNames } from "./blogClassNames";
-import { BACK_TO_HOME, LOADER_TEXT } from "../../../../constants";
+import { BACK_TO_HOME, LOADER_TEXT } from "../../../constants";
 import { fetchBlogsContent } from "@/api/blog/blogContentService";
-import { Blogs } from "../../../../models/blog";
+import { Blogs } from "../../../models/blog";
 import { Suspense } from "react";
 
 export default async function Page() {

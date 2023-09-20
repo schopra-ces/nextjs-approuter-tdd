@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import headerClassNames from "./headerClassNames";
-import { BLOG_NAV, HOME_NAV, WELCOME_USER } from "../../../constants";
+import { BLOG_NAV, HOME_NAV, WELCOME_USER } from "../../constants";
 
 const Header = () => {
   const { container, header, link, welcomeText, ul } = headerClassNames;

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { BLOG_NAV, HOME_NAV, WELCOME_USER } from "../../../constants";
+import { BLOG_NAV, HOME_NAV, WELCOME_USER } from "../../../src/constants";
 import Header from "@/components/Header";
 
 describe("Header", () => {

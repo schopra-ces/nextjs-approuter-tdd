@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Page from "@/app/blog/[slug]/page";
-import { BLOG_CONTENT } from "../../../mockdata/blog-content";
+import { BLOG_CONTENT } from "../../../src/mockdata/blog-content";
 
 describe("Slug/Blog Content", () => {
   it("Should have a Back to Home Page Link", async () => {

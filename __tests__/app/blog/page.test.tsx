@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import { CATEGORY } from "../../../mockdata/blog-categories";
-import { BLOG_TEXT, BLOG_TITLE } from "../../../constants";
+import { CATEGORY } from "../../../src/mockdata/blog-categories";
+import { BLOG_TEXT, BLOG_TITLE } from "../../../src/constants";
 import Page from "@/app/blog/page";
 
 describe("Blog Page", () => {

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { SpinnerCircular } from "spinners-react";
-import { LOADER_TEXT } from "../../constants";
+import { LOADER_TEXT } from "../constants";
 
 export default function Loading() {
   return (

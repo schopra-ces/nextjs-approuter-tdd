@@ -1,6 +1,6 @@
 "use client";
 
-import { ERROR_BTN_LBL, ERROR_MSG_GLOBAL } from "../../constants";
+import { ERROR_BTN_LBL, ERROR_MSG_GLOBAL } from "../constants";
 
 export default function GlobalError({
   error,

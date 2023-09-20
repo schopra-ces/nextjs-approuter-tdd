@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { blogCategoryCardClassNames } from "./blogCategoryClassNames";
-import { Category } from "../../../models/category";
+import { Category } from "../../models/category";
 
 const BlogCategoryCard: FC<Category> = (props) => {
   const { image, name, slug, description } = props;

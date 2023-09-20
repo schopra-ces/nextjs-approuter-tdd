@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import BlogCategoryCard from "@/components/BlogCategoryCard";
-import { MOCK_CATEGORY } from "../../../mockdata/blog-categories";
-import { Category } from "../../../models/category";
+import { MOCK_CATEGORY } from "../../../src/mockdata/blog-categories";
+import { Category } from "../../../src/models/category";
 
 describe("Individual Blog Card ", () => {
   const props: Category = MOCK_CATEGORY;

@@ -1,6 +1,6 @@
 "use client";
 
-import { ERROR_BTN_LBL, ERROR_LBL, ERROR_MSG } from "../../constants";
+import { ERROR_BTN_LBL, ERROR_LBL, ERROR_MSG } from "../constants";
 
 type ErrorProps = {
   error: Error;
